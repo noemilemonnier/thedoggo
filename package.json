@@ -1,6 +1,6 @@
 {
-  "name": "TheDoggo",
-  "description": "TheDoggo - testing react/nodejs/mongodb/heroku",
+  "name": "gatsby-starter-forty-v2",
+  "description": "TheDoggo",
   "version": "1.0.0",
   "author": "Noemi Lemonnier",
   "dependencies": {
