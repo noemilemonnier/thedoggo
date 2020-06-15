@@ -5,7 +5,6 @@
 ///
 
 /* Icon */
-
 	.icon {
 		@include icon;
 		border-bottom: none;
@@ -20,6 +19,22 @@
 				background-color: _palette(fg-bold);
 				border-radius: 100%;
 				color: _palette(bg);
+				display: inline-block;
+				height: 2em;
+				line-height: 2em;
+				text-align: center;
+				width: 2em;
+			}
+		}
+	}
+	.iconDog {
+		@include icon;
+		border-bottom: none;
+
+		&.alt {
+			&:before {
+				background-color: _palette(bg);
+				color: _palette(fg);
 				display: inline-block;
 				height: 2em;
 				line-height: 2em;

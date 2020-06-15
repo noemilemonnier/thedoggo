@@ -2,6 +2,7 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import Layout from '../components/layout'
 import { graphql } from "gatsby"
+import { Link } from "gatsby"
 
 export const query = graphql`
   query {
@@ -48,6 +49,7 @@ const Breeds = ({data}) => (
 						</table>
                         </div>
                 </div>
+                    <Link onClick={data.onClick} to="/ajax"><a className="iconDog alt fa fa-spinner" /></Link>
             </section>
         </div>
     </Layout>

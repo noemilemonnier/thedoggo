@@ -49,6 +49,19 @@
 				
 			}
 		}
+		&.fitBig {
+			
+			margin: 0 0 _size(element-margin) 0;
+			width: 100%;
+			vertical-align: middle;
+			display: table-cell;
+
+			img {
+				width: 400px;
+				height: 400px;
+				
+			}
+		}
 
 		&.main {
 			display: block;
