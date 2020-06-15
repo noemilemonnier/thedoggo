@@ -1,7 +1,6 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import Layout from '../components/layout'
-import pic08 from '../assets/images/pic08.jpg'
 import { graphql } from "gatsby"
 
 export const query = graphql`
@@ -34,24 +33,25 @@ const Breeds = ({data}) => (
     
         <div id="main" className="alt">
             <section id="one"> 
-            <div className="inner">
+            	<div className="inner">
                         <div className="col-8">
-                            <div className="grid-wrapper">
-                            {data.allMongodbBreedsListBreeds.edges.map(({ node }, index) => (
-                                        <div className="col-2">
-                                            <h4> {node.name} </h4>
-                                            <span className="image fit">
-                                                <img src={node.image} alt={node.name} />
-                                            </span>
-                                        </div>
-                                      )
-                                    )}     
-                            </div>
+                        <table id="myTable">
+                        	<tbody>
+                        	{data.allMongodbBreedsListBreeds.edges.map(({ node }, index) => (
+                        		<tr>
+      								<td class="cell">{node.name} </td>
+      								<td> <span className="image fit"> <img src={node.image} alt={node.name} /> </span> </td>
+    							</tr>
+    							  )
+                                )} 
+  							</tbody>
+						</table>
                         </div>
                 </div>
             </section>
         </div>
     </Layout>
 )
+
 
 export default Breeds
