@@ -1,6 +1,6 @@
 # TheDoggo
 
-**This is a test using a template to explore NodeJs/React/Mongodb.**
+**This is a test using a template from HTML5 UP (https://html5up.net/) that was customized for my project. I did this project to explore NodeJs/Gatsby/React/Mongodb and pushed the project to Netlify.**
 
 
 ## Preview
