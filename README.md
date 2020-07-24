@@ -5,7 +5,7 @@
 
 ## Preview
 
-https://cocky-engelbart-a9c9d2.netlify.app
+https://thedoggo.netlify.app
 
 ## Installation
 
